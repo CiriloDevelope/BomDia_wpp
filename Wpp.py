@@ -25,9 +25,9 @@ navegador.get('https://web.whatsapp.com/')
 
  #Processo de entrar no Wpp   
 while len(navegador.find_elements('xpath', '//*[@id="app"]/div/div[2]/div[3]/header/div[1]')) < 1:
-    sleep(2)
+    sleep(15)
     navegador.get(link)
-    sleep(5)
+    sleep(10)
 
 
 #Função para apertar o botao de enviar e colar a msg novamente 
